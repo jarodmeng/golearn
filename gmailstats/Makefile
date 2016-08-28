@@ -38,3 +38,6 @@ print_message:
 
 list_messages:
 	$(build) -o list_messages 11_list_messages.go
+
+get_messages:
+	$(build) -o get_messages 12_get_messages.go

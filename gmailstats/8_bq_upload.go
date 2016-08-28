@@ -12,10 +12,10 @@ import (
 func main() {
 	const projectId = "google.com:jarodmeng"
 	const datasetId = "testing"
-	const tableId = "gmailheader"
+	const tableId = "gmailheader3"
 
-	const dataFile = "output.json"
-	const schemaFile = "outputSchema.json"
+	const dataFile = "messages.json"
+	const schemaFile = "messagesSchema.json"
 
 	bqService, err := createBqService(defaultSecretFile, defaultBqTokenFile, defaultBqScope)
 	if err != nil {
