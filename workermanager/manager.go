@@ -120,6 +120,8 @@ func (m *manager) collateOutput() {
 	}
 }
 
+// Manage takes an input slice and starts processing. It collates the results
+// in its result field and returns the manager itself ready for reporting.
 func (m *manager) Manage(in []*job) *manager {
 	m.setZeroes()         // set all intermediate channels/slices to zero values
 	go m.convertInput(in) // convert input slice to input channel for the manager
